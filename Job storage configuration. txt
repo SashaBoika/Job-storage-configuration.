@@ -1,2 +1,3 @@
 Ververica Platform maintains a record of deployment jobs in persistent storage, as well as in AppManager memory. 
 You can view the information regarding all the terminal jobs for a specific deployment.  Terminal jobs refer to jobs that have any of these VVP specific statuses: FAILED, TERMINATED, and FINISHED.
+By default, VVP stores an unlimited number of terminal jobs. However, you can configure the deletion of terminal jobs based on specific criteria such as time interval or the maximum number of jobs to be kept in history. This configuration can be done optionally during the installation of VVP
