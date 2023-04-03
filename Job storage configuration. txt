@@ -8,5 +8,6 @@ During VVP installation you can configure the following  two optional properties
 vvp.job-service.max-number-jobs-in-terminal-state - defines the maximum number of terminal jobs per deployment that should be always kept in jobs history. 
 vvp.job-service.jobs-cleanup-interval - defines the duration of cleanup interval. The format of the interval follows Spring’s Duration conversion.
 
+When these properties are provided, then the AppManager scheduled task repeatedly searches for outdated deployment jobs and deletes them from both memory and persistent storage.
 
 Note: to change these parameters VVP must be stopped, and then started with new configuration.
